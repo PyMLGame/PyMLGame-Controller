@@ -51,22 +51,24 @@
             android:layout_weight="2"
             android:layout_height="match_parent"
             />
-        <Button
+        <ImageView
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="Menu"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_launcher"
+            android:id="@+id/buttonMenu"
             />
         <View
             android:layout_width="0dp"
             android:layout_weight="2"
             android:layout_height="1dp"
             />
-        <Button
+        <ImageView
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="Y"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_launcher"
+            android:id="@+id/buttonY"
             />
         <View
             android:layout_width="0dp"
@@ -111,6 +113,7 @@
             android:layout_weight="1"
             android:layout_height="match_parent"
             android:src="@drawable/ic_launcher"
+            android:id="@+id/buttonX"
             />
         <View
             android:layout_width="0dp"
@@ -120,8 +123,9 @@
         <ImageView
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="B"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_launcher"
+            android:id="@+id/buttonB"
             />
 
     </LinearLayout>
@@ -155,8 +159,9 @@
         <ImageView
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:src="@drawable/ic_launcher"
+            android:id="@+id/buttonSelect"
             />
 
         <View
@@ -168,19 +173,21 @@
         <ImageView
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="wrap_content"
-
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_launcher"
+            android:id="@+id/buttonStart"
             />
         <View
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="1dp"
             />
-        <Button
+        <ImageView
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="B"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_launcher"
+            android:id="@+id/buttonA"
             />
         <View
             android:layout_width="0dp"

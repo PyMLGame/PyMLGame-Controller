@@ -135,8 +135,31 @@ public class MainActivity extends ActionBarActivity {
     @InjectView(R.id.right)
     ImageView right;
 
-    @InjectView(R.id.container)
-    ViewGroup container;
+    @InjectView(R.id.buttonA)
+    ImageView buttonA;
+
+
+    @InjectView(R.id.buttonB)
+    ImageView buttonB;
+
+
+    @InjectView(R.id.buttonX)
+    ImageView buttonX;
+
+
+    @InjectView(R.id.buttonY)
+    ImageView buttonY;
+
+    @InjectView(R.id.buttonStart)
+    ImageView buttonStart;
+
+    @InjectView(R.id.buttonSelect)
+    ImageView buttonSelect;
+
+    @InjectView(R.id.buttonMenu)
+    ImageView buttonMenu;
+
+
 
     String buttonStates = "00000000000000";
     String tempButtonStates = "00000000000000";
@@ -157,6 +180,16 @@ public class MainActivity extends ActionBarActivity {
                     checkView(down, event, 1, i);
                     checkView(left, event, 2, i);
                     checkView(right, event, 3, i);
+                    checkView(buttonA, event, 4, i);
+                    checkView(buttonB, event, 5, i);
+                    checkView(buttonX, event, 6, i);
+                    checkView(buttonY, event, 7, i);
+                    checkView(buttonStart, event, 8, i);
+                    checkView(buttonSelect, event, 9, i);
+                    checkView(buttonMenu, event, 10, i);
+                    checkView(buttonMenu, event, 11, i);
+                    checkView(buttonMenu, event, 12, i);
+                    checkView(buttonMenu, event, 13, i);
                 }
 
                 buttonStates = tempButtonStates;
