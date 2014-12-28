@@ -1,4 +1,4 @@
-package org.ligi.pmlctrl;
+package org.c_base.pymlgame.controller;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

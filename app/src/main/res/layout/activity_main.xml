@@ -12,13 +12,14 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:layout_marginBottom="@dimen/abc_action_bar_default_height_material">
         <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:id="@+id/ip"
             android:layout_weight="1"
-            android:hint="IP:PORT"
+            android:hint="IP Address of PyMLGame"
             />
         <Button
             android:layout_width="0dp"
@@ -43,7 +44,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
-            android:src="@drawable/ic_launcher"
+            android:src="@drawable/button_up"
             android:id="@+id/up"
             />
         <View
@@ -55,7 +56,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
-            android:src="@drawable/ic_launcher"
+            android:src="@drawable/button_menu"
             android:id="@+id/buttonMenu"
             />
         <View
@@ -67,8 +68,8 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
-            android:src="@drawable/ic_launcher"
-            android:id="@+id/buttonY"
+            android:src="@drawable/button_x"
+            android:id="@+id/buttonX"
             />
         <View
             android:layout_width="0dp"
@@ -86,7 +87,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
-            android:src="@drawable/ic_launcher"
+            android:src="@drawable/button_left"
             android:id="@+id/left"
             />
         <View
@@ -98,7 +99,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
-            android:src="@drawable/ic_launcher"
+            android:src="@drawable/button_right"
             android:id="@+id/right"
             />
 
@@ -112,8 +113,8 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
-            android:src="@drawable/ic_launcher"
-            android:id="@+id/buttonX"
+            android:src="@drawable/button_y"
+            android:id="@+id/buttonY"
             />
         <View
             android:layout_width="0dp"
@@ -124,8 +125,8 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
-            android:src="@drawable/ic_launcher"
-            android:id="@+id/buttonB"
+            android:src="@drawable/button_a"
+            android:id="@+id/buttonA"
             />
 
     </LinearLayout>
@@ -146,7 +147,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
-            android:src="@drawable/ic_launcher"
+            android:src="@drawable/button_down"
             android:id="@+id/down"
             />
 
@@ -160,7 +161,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
-            android:src="@drawable/ic_launcher"
+            android:src="@drawable/button_select"
             android:id="@+id/buttonSelect"
             />
 
@@ -174,7 +175,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
-            android:src="@drawable/ic_launcher"
+            android:src="@drawable/button_start"
             android:id="@+id/buttonStart"
             />
         <View
@@ -186,8 +187,8 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
-            android:src="@drawable/ic_launcher"
-            android:id="@+id/buttonA"
+            android:src="@drawable/button_b"
+            android:id="@+id/buttonB"
             />
         <View
             android:layout_width="0dp"
