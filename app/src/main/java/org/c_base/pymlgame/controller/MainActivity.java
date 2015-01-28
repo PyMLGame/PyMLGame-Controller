@@ -1,5 +1,6 @@
 package org.c_base.pymlgame.controller;
 
+import android.content.Context;
 import android.graphics.Rect;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
@@ -9,6 +10,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.os.Vibrator;
+import android.widget.Toast;
 
 import java.io.IOException;
 import java.net.DatagramPacket;
@@ -135,6 +138,8 @@ public class MainActivity extends ActionBarActivity {
     @InjectView(R.id.buttonMenu)
     ImageView buttonMenu;
 
+    Vibrator vibrator;
+
     String buttonStates = "00000000000000";
     String tempButtonStates = "00000000000000";
 
@@ -142,6 +147,8 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
 
         ButterKnife.inject(this);
 
@@ -179,9 +186,13 @@ public class MainActivity extends ActionBarActivity {
         if(contains) {
             if(ev.getAction() == MotionEvent.ACTION_UP) {
                 tempButtonStates = tempButtonStates.substring(0, position) + "0" + tempButtonStates.substring(position + 1);
-                return;
             }
-            tempButtonStates = tempButtonStates.substring(0, position) + "1" + tempButtonStates.substring(position + 1);
+            else {
+                if (vibrator.hasVibrator() && buttonStates.charAt(position) == '0') {
+                    vibrator.vibrate(20);
+                }
+                tempButtonStates = tempButtonStates.substring(0, position) + "1" + tempButtonStates.substring(position + 1);
+            }
         }
     }
 }
