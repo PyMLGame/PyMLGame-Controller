@@ -11,7 +11,6 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.os.Vibrator;
-import android.widget.Toast;
 
 import java.io.IOException;
 import java.net.DatagramPacket;
