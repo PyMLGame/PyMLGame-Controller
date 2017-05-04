@@ -27,7 +27,7 @@ import butterknife.OnClick;
 
 public class MainActivity extends ActionBarActivity {
     private DatagramSocket client_socket;
-    private String uid;
+    private String uuid;
     private InetAddress ipaddress = null;
     private int port = 1338;
 
@@ -42,8 +42,8 @@ public class MainActivity extends ActionBarActivity {
                     final String modifiedSentence = new String(receivePacket.getData(), 0, receivePacket.getLength());
 
                     Log.i("PyMLGCtlr", "Receiver" + modifiedSentence);
-                    if(modifiedSentence.startsWith("/uid/")) {
-                        uid = modifiedSentence.substring(5);
+                    if(modifiedSentence.startsWith("/uuid/")) {
+                        uuid = modifiedSentence.substring(5);
                         new Thread(new Sender()).start();
                     }
                 } catch(IOException e) {
@@ -58,7 +58,7 @@ public class MainActivity extends ActionBarActivity {
         public void run() {
             while(true) {
                 try {
-                    String cmd = "/controller/" + uid + "/states/" + buttonStates;
+                    String cmd = "/controller/" + uuid + "/states/" + buttonStates;
                     byte[] send_data = cmd.getBytes(Charset.forName("UTF-8"));
                     DatagramPacket send_packet = new DatagramPacket(send_data, cmd.length(), ipaddress, 1338);
                     client_socket.send(send_packet);
