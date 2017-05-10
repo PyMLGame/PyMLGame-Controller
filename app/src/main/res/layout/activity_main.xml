@@ -19,13 +19,13 @@
             android:layout_height="wrap_content"
             android:id="@+id/ip"
             android:layout_weight="1"
-            android:hint="IP Address of PyMLGame"
+            android:hint="@string/ip_host_of_pymlgame"
             />
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Connect"
+            android:text="@string/connect"
             android:id="@+id/connect"
             />
         </LinearLayout>
@@ -136,7 +136,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">        <View
+        android:layout_weight="1">
+        <View
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="1dp"
